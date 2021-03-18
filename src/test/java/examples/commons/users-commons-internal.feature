@@ -23,6 +23,8 @@ Feature: sample karate test script
       """
 
     Given url 'https://jsonplaceholder.typicode.com/users'
+    And form field user = 'test'
+
     And request user
     When method post
     Then status 201
