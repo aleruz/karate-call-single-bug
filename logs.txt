@@ -1,0 +1,1363 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.mycompany:callSingle >----------------------
+[INFO] Building callSingle 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ callSingle ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/aruzzon/devel/karate/callSingle/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ callSingle ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ callSingle ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ callSingle ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ callSingle ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running examples.ExamplesTest
+20:45:58.453 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @user
+20:45:59.176 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:45:59.177 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1616096759177
+20:45:59.185 [main] DEBUG com.intuit.karate.Suite - waiting for 10 features to complete
+20:46:00.074 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+20:46:00.074 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+20:46:00.074 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+20:46:00.111 [pool-1-thread-1] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:examples/commons/users-commons-get1.feature
+20:46:05.310 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:46:13.305 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 7989
+1 < 200
+1 < Date: Thu, 18 Mar 2021 19:46:13 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Set-Cookie: __cfduid=dab3d6029567c721e7e3d18c8bb1ad3201616096773; expires=Sat, 17-Apr-21 19:46:13 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < x-powered-by: Express
+1 < x-ratelimit-limit: 1000
+1 < x-ratelimit-remaining: 996
+1 < x-ratelimit-reset: 1607118329
+1 < vary: Origin, Accept-Encoding
+1 < access-control-allow-credentials: true
+1 < cache-control: max-age=43200
+1 < pragma: no-cache
+1 < expires: -1
+1 < x-content-type-options: nosniff
+1 < etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < via: 1.1 vegur
+1 < CF-Cache-Status: HIT
+1 < Age: 10940
+1 < cf-request-id: 08e878dc6300004ee6fd8fd000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=5RR3b%2FT10EZtCvX82PF%2FF5wbLWMvZdAh7ct%2F63wr38fodwiwXq59DWiE6uo8M32ZyVUCgWQTgYvJfW9Llbc1UlBz3Onc88LnFs0S4JwInEwFV5G5kjiLS0yb9GXS"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Server: cloudflare
+1 < CF-RAY: 6320f7409ca94ee6-FRA
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+[{"website":"hildegard.org","address":{"zipcode":"92998-3874","geo":{"lng":"81.1496","lat":"-37.3159"},"suite":"Apt. 556","city":"Gwenborough","street":"Kulas Light"},"phone":"1-770-736-8031 x56442","name":"Leanne Graham","company":{"bs":"harness real-time e-markets","catchPhrase":"Multi-layered client-server neural-net","name":"Romaguera-Crona"},"id":1,"email":"Sincere@april.biz","username":"Bret"},{"website":"anastasia.net","address":{"zipcode":"90566-7771","geo":{"lng":"-34.4618","lat":"-43.9509"},"suite":"Suite 879","city":"Wisokyburgh","street":"Victor Plains"},"phone":"010-692-6593 x09125","name":"Ervin Howell","company":{"bs":"synergize scalable supply-chains","catchPhrase":"Proactive didactic contingency","name":"Deckow-Crist"},"id":2,"email":"Shanna@melissa.tv","username":"Antonette"},{"website":"ramiro.info","address":{"zipcode":"59590-4157","geo":{"lng":"-47.0653","lat":"-68.6102"},"suite":"Suite 847","city":"McKenziehaven","street":"Douglas Extension"},"phone":"1-463-123-4447","name":"Clementine Bauch","company":{"bs":"e-enable strategic applications","catchPhrase":"Face to face bifurcated interface","name":"Romaguera-Jacobson"},"id":3,"email":"Nathan@yesenia.net","username":"Samantha"},{"website":"kale.biz","address":{"zipcode":"53919-4257","geo":{"lng":"-164.2990","lat":"29.4572"},"suite":"Apt. 692","city":"South Elvis","street":"Hoeger Mall"},"phone":"493-170-9623 x156","name":"Patricia Lebsack","company":{"bs":"transition cutting-edge web services","catchPhrase":"Multi-tiered zero tolerance productivity","name":"Robel-Corkery"},"id":4,"email":"Julianne.OConner@kory.org","username":"Karianne"},{"website":"demarco.info","address":{"zipcode":"33263","geo":{"lng":"62.5342","lat":"-31.8129"},"suite":"Suite 351","city":"Roscoeview","street":"Skiles Walks"},"phone":"(254)954-1289","name":"Chelsey Dietrich","company":{"bs":"revolutionize end-to-end systems","catchPhrase":"User-centric fault-tolerant solution","name":"Keebler LLC"},"id":5,"email":"Lucio_Hettinger@annie.ca","username":"Kamren"},{"website":"ola.org","address":{"zipcode":"23505-1337","geo":{"lng":"71.7478","lat":"-71.4197"},"suite":"Apt. 950","city":"South Christy","street":"Norberto Crossing"},"phone":"1-477-935-8478 x6430","name":"Mrs. Dennis Schulist","company":{"bs":"e-enable innovative applications","catchPhrase":"Synchronised bottom-line interface","name":"Considine-Lockman"},"id":6,"email":"Karley_Dach@jasper.info","username":"Leopoldo_Corkery"},{"website":"elvis.io","address":{"zipcode":"58804-1099","geo":{"lng":"21.8984","lat":"24.8918"},"suite":"Suite 280","city":"Howemouth","street":"Rex Trail"},"phone":"210.067.6132","name":"Kurtis Weissnat","company":{"bs":"generate enterprise e-tailers","catchPhrase":"Configurable multimedia task-force","name":"Johns Group"},"id":7,"email":"Telly.Hoeger@billy.biz","username":"Elwyn.Skiles"},{"website":"jacynthe.com","address":{"zipcode":"45169","geo":{"lng":"-120.7677","lat":"-14.3990"},"suite":"Suite 729","city":"Aliyaview","street":"Ellsworth Summit"},"phone":"586.493.6943 x140","name":"Nicholas Runolfsdottir V","company":{"bs":"e-enable extensible e-tailers","catchPhrase":"Implemented secondary concept","name":"Abernathy Group"},"id":8,"email":"Sherwood@rosamond.me","username":"Maxime_Nienow"},{"website":"conrad.com","address":{"zipcode":"76495-3109","geo":{"lng":"-168.8889","lat":"24.6463"},"suite":"Suite 449","city":"Bartholomebury","street":"Dayna Park"},"phone":"(775)976-6794 x41206","name":"Glenna Reichert","company":{"bs":"aggregate real-time technologies","catchPhrase":"Switchable contextually-based project","name":"Yost and Sons"},"id":9,"email":"Chaim_McDermott@dana.io","username":"Delphine"},{"website":"ambrose.net","address":{"zipcode":"31428-2261","geo":{"lng":"57.2232","lat":"-38.2386"},"suite":"Suite 198","city":"Lebsackbury","street":"Kattie Turnpike"},"phone":"024-648-3804","name":"Clementina DuBuque","company":{"bs":"target end-to-end models","catchPhrase":"Centralized empowering task-force","name":"Hoeger LLC"},"id":10,"email":"Rey.Padberg@karina.biz","username":"Moriah.Stanton"}]
+20:46:13.352 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Cookie: __cfduid=dab3d6029567c721e7e3d18c8bb1ad3201616096773; Max-Age=2592000; Expires=Sat, 17 Apr 2021 19:46:13 GMT; Path=/; Domain=.typicode.com; HTTPOnly; SameSite=Lax
+2 > Host: jsonplaceholder.typicode.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.7)
+2 > Accept-Encoding: gzip,deflate
+
+
+20:46:13.714 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 362
+2 < 200
+2 < Date: Thu, 18 Mar 2021 19:46:13 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < X-Ratelimit-Limit: 1000
+2 < X-Ratelimit-Remaining: 998
+2 < X-Ratelimit-Reset: 1616035706
+2 < Vary: Origin, Accept-Encoding
+2 < Access-Control-Allow-Credentials: true
+2 < Cache-Control: max-age=43200
+2 < Pragma: no-cache
+2 < Expires: -1
+2 < X-Content-Type-Options: nosniff
+2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: HIT
+2 < Age: 3429
+2 < cf-request-id: 08e878de3d0000dfbf7003d000000001
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=plRhLA9k7yqLJuhu0F54q5A73Qr0tYaJL3nKup3dxnN%2FhcvJmTJ%2FlUE%2BF0%2Bm3M3ZraXeEMGFBm%2FfQTsTaPp2KsKnXek7j0cNBfcWwZ4JKaBh0EGAeZOQUuq4wmKL"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+2 < Server: cloudflare
+2 < CF-RAY: 6320f7439c2bdfbf-FRA
+2 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+{"website":"hildegard.org","address":{"zipcode":"92998-3874","geo":{"lng":"81.1496","lat":"-37.3159"},"suite":"Apt. 556","city":"Gwenborough","street":"Kulas Light"},"phone":"1-770-736-8031 x56442","name":"Leanne Graham","company":{"bs":"harness real-time e-markets","catchPhrase":"Multi-layered client-server neural-net","name":"Romaguera-Crona"},"id":1,"email":"Sincere@april.biz","username":"Bret"}
+20:46:13.724 [pool-1-thread-1] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:examples/commons/users-commons-get1.feature
+20:46:13.725 [pool-1-thread-3] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:examples/commons/users-commons-get3.feature
+20:46:13.726 [pool-1-thread-1] WARN  com.intuit.karate - over-writing existing variable 'getUsers' with new value: karate.callSingle('classpath:examples/commons/users-commons.feature')
+20:46:17.738 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:46:18.958 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1218
+1 < 200
+1 < Date: Thu, 18 Mar 2021 19:46:18 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Set-Cookie: __cfduid=db6a4ca01e9b64321208d435201b503051616096778; expires=Sat, 17-Apr-21 19:46:18 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < x-powered-by: Express
+1 < x-ratelimit-limit: 1000
+1 < x-ratelimit-remaining: 996
+1 < x-ratelimit-reset: 1607118329
+1 < vary: Origin, Accept-Encoding
+1 < access-control-allow-credentials: true
+1 < cache-control: max-age=43200
+1 < pragma: no-cache
+1 < expires: -1
+1 < x-content-type-options: nosniff
+1 < etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < via: 1.1 vegur
+1 < CF-Cache-Status: HIT
+1 < Age: 10945
+1 < cf-request-id: 08e878f27c00004e2cd006b000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=y%2BSR9Sk9%2BT4AM1AO95sinJ36azGD8SRHvvyWVDLLB8Njf2vor5Gy1a%2F8e7gdTvOxZWdVF0KtsYrdEhuUzhDdl4dAD1tYteny7waAoglAl2Egq1Fwr5E7CZwuNhyg"}],"max_age":604800}
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Server: cloudflare
+1 < CF-RAY: 6320f763f8e44e2c-FRA
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+[{"website":"hildegard.org","address":{"zipcode":"92998-3874","geo":{"lng":"81.1496","lat":"-37.3159"},"suite":"Apt. 556","city":"Gwenborough","street":"Kulas Light"},"phone":"1-770-736-8031 x56442","name":"Leanne Graham","company":{"bs":"harness real-time e-markets","catchPhrase":"Multi-layered client-server neural-net","name":"Romaguera-Crona"},"id":1,"email":"Sincere@april.biz","username":"Bret"},{"website":"anastasia.net","address":{"zipcode":"90566-7771","geo":{"lng":"-34.4618","lat":"-43.9509"},"suite":"Suite 879","city":"Wisokyburgh","street":"Victor Plains"},"phone":"010-692-6593 x09125","name":"Ervin Howell","company":{"bs":"synergize scalable supply-chains","catchPhrase":"Proactive didactic contingency","name":"Deckow-Crist"},"id":2,"email":"Shanna@melissa.tv","username":"Antonette"},{"website":"ramiro.info","address":{"zipcode":"59590-4157","geo":{"lng":"-47.0653","lat":"-68.6102"},"suite":"Suite 847","city":"McKenziehaven","street":"Douglas Extension"},"phone":"1-463-123-4447","name":"Clementine Bauch","company":{"bs":"e-enable strategic applications","catchPhrase":"Face to face bifurcated interface","name":"Romaguera-Jacobson"},"id":3,"email":"Nathan@yesenia.net","username":"Samantha"},{"website":"kale.biz","address":{"zipcode":"53919-4257","geo":{"lng":"-164.2990","lat":"29.4572"},"suite":"Apt. 692","city":"South Elvis","street":"Hoeger Mall"},"phone":"493-170-9623 x156","name":"Patricia Lebsack","company":{"bs":"transition cutting-edge web services","catchPhrase":"Multi-tiered zero tolerance productivity","name":"Robel-Corkery"},"id":4,"email":"Julianne.OConner@kory.org","username":"Karianne"},{"website":"demarco.info","address":{"zipcode":"33263","geo":{"lng":"62.5342","lat":"-31.8129"},"suite":"Suite 351","city":"Roscoeview","street":"Skiles Walks"},"phone":"(254)954-1289","name":"Chelsey Dietrich","company":{"bs":"revolutionize end-to-end systems","catchPhrase":"User-centric fault-tolerant solution","name":"Keebler LLC"},"id":5,"email":"Lucio_Hettinger@annie.ca","username":"Kamren"},{"website":"ola.org","address":{"zipcode":"23505-1337","geo":{"lng":"71.7478","lat":"-71.4197"},"suite":"Apt. 950","city":"South Christy","street":"Norberto Crossing"},"phone":"1-477-935-8478 x6430","name":"Mrs. Dennis Schulist","company":{"bs":"e-enable innovative applications","catchPhrase":"Synchronised bottom-line interface","name":"Considine-Lockman"},"id":6,"email":"Karley_Dach@jasper.info","username":"Leopoldo_Corkery"},{"website":"elvis.io","address":{"zipcode":"58804-1099","geo":{"lng":"21.8984","lat":"24.8918"},"suite":"Suite 280","city":"Howemouth","street":"Rex Trail"},"phone":"210.067.6132","name":"Kurtis Weissnat","company":{"bs":"generate enterprise e-tailers","catchPhrase":"Configurable multimedia task-force","name":"Johns Group"},"id":7,"email":"Telly.Hoeger@billy.biz","username":"Elwyn.Skiles"},{"website":"jacynthe.com","address":{"zipcode":"45169","geo":{"lng":"-120.7677","lat":"-14.3990"},"suite":"Suite 729","city":"Aliyaview","street":"Ellsworth Summit"},"phone":"586.493.6943 x140","name":"Nicholas Runolfsdottir V","company":{"bs":"e-enable extensible e-tailers","catchPhrase":"Implemented secondary concept","name":"Abernathy Group"},"id":8,"email":"Sherwood@rosamond.me","username":"Maxime_Nienow"},{"website":"conrad.com","address":{"zipcode":"76495-3109","geo":{"lng":"-168.8889","lat":"24.6463"},"suite":"Suite 449","city":"Bartholomebury","street":"Dayna Park"},"phone":"(775)976-6794 x41206","name":"Glenna Reichert","company":{"bs":"aggregate real-time technologies","catchPhrase":"Switchable contextually-based project","name":"Yost and Sons"},"id":9,"email":"Chaim_McDermott@dana.io","username":"Delphine"},{"website":"ambrose.net","address":{"zipcode":"31428-2261","geo":{"lng":"57.2232","lat":"-38.2386"},"suite":"Suite 198","city":"Lebsackbury","street":"Kattie Turnpike"},"phone":"024-648-3804","name":"Clementina DuBuque","company":{"bs":"target end-to-end models","catchPhrase":"Centralized empowering task-force","name":"Hoeger LLC"},"id":10,"email":"Rey.Padberg@karina.biz","username":"Moriah.Stanton"}]
+20:46:18.962 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/3
+2 > Cookie: __cfduid=db6a4ca01e9b64321208d435201b503051616096778; Max-Age=2592000; Expires=Sat, 17 Apr 2021 19:46:18 GMT; Path=/; Domain=.typicode.com; HTTPOnly; SameSite=Lax
+2 > Host: jsonplaceholder.typicode.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.7)
+2 > Accept-Encoding: gzip,deflate
+
+
+20:46:19.893 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 930
+2 < 200
+2 < Date: Thu, 18 Mar 2021 19:46:19 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < X-Ratelimit-Limit: 1000
+2 < X-Ratelimit-Remaining: 999
+2 < X-Ratelimit-Reset: 1613661316
+2 < Vary: Origin, Accept-Encoding
+2 < Access-Control-Allow-Credentials: true
+2 < Cache-Control: max-age=43200
+2 < Pragma: no-cache
+2 < Expires: -1
+2 < X-Content-Type-Options: nosniff
+2 < Etag: W/"208-uuwhfwQMzFzbJr9Pg6DKXae0SXA"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: HIT
+2 < Age: 15060
+2 < cf-request-id: 08e878f65d0000e0075991f000000001
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=SmJzAGaWkdeeWdeSZ2l3sVSLXxiRe2K5vy0pUTaM5s5CYEUz2jLXXU4dYPasFvD%2FKhGLIe7P9emf3XLT97eFnzd5QjN%2BGn7XJFn4vmdSfE61Hj64COLe%2FjTRJTPL"}],"max_age":604800}
+2 < NEL: {"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 6320f76a280be007-FRA
+2 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+{"website":"ramiro.info","address":{"zipcode":"59590-4157","geo":{"lng":"-47.0653","lat":"-68.6102"},"suite":"Suite 847","city":"McKenziehaven","street":"Douglas Extension"},"phone":"1-463-123-4447","name":"Clementine Bauch","company":{"bs":"e-enable strategic applications","catchPhrase":"Face to face bifurcated interface","name":"Romaguera-Jacobson"},"id":3,"email":"Nathan@yesenia.net","username":"Samantha"}
+20:46:19.896 [pool-1-thread-3] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:examples/commons/users-commons-get3.feature
+20:46:19.897 [pool-1-thread-2] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:examples/commons/users-commons-get2.feature
+20:46:19.897 [pool-1-thread-3] WARN  com.intuit.karate - over-writing existing variable 'getUsers' with new value: karate.callSingle('classpath:examples/commons/users-commons.feature')
+20:46:22.911 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:46:24.081 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1169
+1 < 200
+1 < Date: Thu, 18 Mar 2021 19:46:24 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Set-Cookie: __cfduid=ddb0bfb4df82b92471cb934d9b46cea3c1616096784; expires=Sat, 17-Apr-21 19:46:24 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < x-powered-by: Express
+1 < x-ratelimit-limit: 1000
+1 < x-ratelimit-remaining: 996
+1 < x-ratelimit-reset: 1607118329
+1 < vary: Origin, Accept-Encoding
+1 < access-control-allow-credentials: true
+1 < cache-control: max-age=43200
+1 < pragma: no-cache
+1 < expires: -1
+1 < x-content-type-options: nosniff
+1 < etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < via: 1.1 vegur
+1 < CF-Cache-Status: HIT
+1 < Age: 10951
+1 < cf-request-id: 08e87906af00004a86bc322000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=lIZl2PT%2FKqfW0E6WZVwOt%2FboQ7plx%2BUg5NdVtAQoxYrrEXL69GpBfTi7sByMoWQTVPMxQxbrT9Fxp58igVUsH2e422WFbr65iTdkSo%2FKnADw1GUTDirUbBBT3JsL"}]}
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Server: cloudflare
+1 < CF-RAY: 6320f7844e1d4a86-FRA
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+[{"website":"hildegard.org","address":{"zipcode":"92998-3874","geo":{"lng":"81.1496","lat":"-37.3159"},"suite":"Apt. 556","city":"Gwenborough","street":"Kulas Light"},"phone":"1-770-736-8031 x56442","name":"Leanne Graham","company":{"bs":"harness real-time e-markets","catchPhrase":"Multi-layered client-server neural-net","name":"Romaguera-Crona"},"id":1,"email":"Sincere@april.biz","username":"Bret"},{"website":"anastasia.net","address":{"zipcode":"90566-7771","geo":{"lng":"-34.4618","lat":"-43.9509"},"suite":"Suite 879","city":"Wisokyburgh","street":"Victor Plains"},"phone":"010-692-6593 x09125","name":"Ervin Howell","company":{"bs":"synergize scalable supply-chains","catchPhrase":"Proactive didactic contingency","name":"Deckow-Crist"},"id":2,"email":"Shanna@melissa.tv","username":"Antonette"},{"website":"ramiro.info","address":{"zipcode":"59590-4157","geo":{"lng":"-47.0653","lat":"-68.6102"},"suite":"Suite 847","city":"McKenziehaven","street":"Douglas Extension"},"phone":"1-463-123-4447","name":"Clementine Bauch","company":{"bs":"e-enable strategic applications","catchPhrase":"Face to face bifurcated interface","name":"Romaguera-Jacobson"},"id":3,"email":"Nathan@yesenia.net","username":"Samantha"},{"website":"kale.biz","address":{"zipcode":"53919-4257","geo":{"lng":"-164.2990","lat":"29.4572"},"suite":"Apt. 692","city":"South Elvis","street":"Hoeger Mall"},"phone":"493-170-9623 x156","name":"Patricia Lebsack","company":{"bs":"transition cutting-edge web services","catchPhrase":"Multi-tiered zero tolerance productivity","name":"Robel-Corkery"},"id":4,"email":"Julianne.OConner@kory.org","username":"Karianne"},{"website":"demarco.info","address":{"zipcode":"33263","geo":{"lng":"62.5342","lat":"-31.8129"},"suite":"Suite 351","city":"Roscoeview","street":"Skiles Walks"},"phone":"(254)954-1289","name":"Chelsey Dietrich","company":{"bs":"revolutionize end-to-end systems","catchPhrase":"User-centric fault-tolerant solution","name":"Keebler LLC"},"id":5,"email":"Lucio_Hettinger@annie.ca","username":"Kamren"},{"website":"ola.org","address":{"zipcode":"23505-1337","geo":{"lng":"71.7478","lat":"-71.4197"},"suite":"Apt. 950","city":"South Christy","street":"Norberto Crossing"},"phone":"1-477-935-8478 x6430","name":"Mrs. Dennis Schulist","company":{"bs":"e-enable innovative applications","catchPhrase":"Synchronised bottom-line interface","name":"Considine-Lockman"},"id":6,"email":"Karley_Dach@jasper.info","username":"Leopoldo_Corkery"},{"website":"elvis.io","address":{"zipcode":"58804-1099","geo":{"lng":"21.8984","lat":"24.8918"},"suite":"Suite 280","city":"Howemouth","street":"Rex Trail"},"phone":"210.067.6132","name":"Kurtis Weissnat","company":{"bs":"generate enterprise e-tailers","catchPhrase":"Configurable multimedia task-force","name":"Johns Group"},"id":7,"email":"Telly.Hoeger@billy.biz","username":"Elwyn.Skiles"},{"website":"jacynthe.com","address":{"zipcode":"45169","geo":{"lng":"-120.7677","lat":"-14.3990"},"suite":"Suite 729","city":"Aliyaview","street":"Ellsworth Summit"},"phone":"586.493.6943 x140","name":"Nicholas Runolfsdottir V","company":{"bs":"e-enable extensible e-tailers","catchPhrase":"Implemented secondary concept","name":"Abernathy Group"},"id":8,"email":"Sherwood@rosamond.me","username":"Maxime_Nienow"},{"website":"conrad.com","address":{"zipcode":"76495-3109","geo":{"lng":"-168.8889","lat":"24.6463"},"suite":"Suite 449","city":"Bartholomebury","street":"Dayna Park"},"phone":"(775)976-6794 x41206","name":"Glenna Reichert","company":{"bs":"aggregate real-time technologies","catchPhrase":"Switchable contextually-based project","name":"Yost and Sons"},"id":9,"email":"Chaim_McDermott@dana.io","username":"Delphine"},{"website":"ambrose.net","address":{"zipcode":"31428-2261","geo":{"lng":"57.2232","lat":"-38.2386"},"suite":"Suite 198","city":"Lebsackbury","street":"Kattie Turnpike"},"phone":"024-648-3804","name":"Clementina DuBuque","company":{"bs":"target end-to-end models","catchPhrase":"Centralized empowering task-force","name":"Hoeger LLC"},"id":10,"email":"Rey.Padberg@karina.biz","username":"Moriah.Stanton"}]
+20:46:24.087 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/2
+2 > Cookie: __cfduid=ddb0bfb4df82b92471cb934d9b46cea3c1616096784; Max-Age=2592000; Expires=Sat, 17 Apr 2021 19:46:24 GMT; Path=/; Domain=.typicode.com; HTTPOnly; SameSite=Lax
+2 > Host: jsonplaceholder.typicode.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.7)
+2 > Accept-Encoding: gzip,deflate
+
+
+20:46:25.798 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 1709
+2 < 200
+2 < Date: Thu, 18 Mar 2021 19:46:25 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < X-Ratelimit-Limit: 1000
+2 < X-Ratelimit-Remaining: 999
+2 < X-Ratelimit-Reset: 1613218752
+2 < Vary: Origin, Accept-Encoding
+2 < Access-Control-Allow-Credentials: true
+2 < Cache-Control: max-age=43200
+2 < Pragma: no-cache
+2 < Expires: -1
+2 < X-Content-Type-Options: nosniff
+2 < Etag: W/"1fd-XTG63SYhaP/Uo6/vgmARnL3rpBk"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: HIT
+2 < Age: 20506
+2 < cf-request-id: 08e8790c830000d6d500a97000000001
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=sUGUsRt49MfpSr0rtb%2B5L29R8Uwj7vH5B43xJzgn%2BSV2suZ3k5y7EAn2nF3oj9%2B1Gtti3Tf0AnDaSkow90LFdbNXXTTjTNF0AhEdYZeHWw9yX3foulcSDlmgSmc%2F"}]}
+2 < NEL: {"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 6320f78d9b71d6d5-FRA
+2 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+{"website":"anastasia.net","address":{"zipcode":"90566-7771","geo":{"lng":"-34.4618","lat":"-43.9509"},"suite":"Suite 879","city":"Wisokyburgh","street":"Victor Plains"},"phone":"010-692-6593 x09125","name":"Ervin Howell","company":{"bs":"synergize scalable supply-chains","catchPhrase":"Proactive didactic contingency","name":"Deckow-Crist"},"id":2,"email":"Shanna@melissa.tv","username":"Antonette"}
+20:46:25.801 [pool-1-thread-2] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:examples/commons/users-commons-get2.feature
+20:46:25.801 [pool-1-thread-3] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:examples/commons/users-commons.feature
+20:46:25.802 [pool-1-thread-2] WARN  com.intuit.karate - over-writing existing variable 'getUsers' with new value: karate.callSingle('classpath:examples/commons/users-commons.feature')
+20:46:25.810 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+  "responseHeaders": {
+    "Date": [
+      "Thu, 18 Mar 2021 19:46:13 GMT"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Transfer-Encoding": [
+      "chunked"
+    ],
+    "Connection": [
+      "keep-alive"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ],
+    "X-Ratelimit-Limit": [
+      "1000"
+    ],
+    "X-Ratelimit-Remaining": [
+      "998"
+    ],
+    "X-Ratelimit-Reset": [
+      "1616035706"
+    ],
+    "Vary": [
+      "Origin, Accept-Encoding"
+    ],
+    "Access-Control-Allow-Credentials": [
+      "true"
+    ],
+    "Cache-Control": [
+      "max-age=43200"
+    ],
+    "Pragma": [
+      "no-cache"
+    ],
+    "Expires": [
+      "-1"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "Etag": [
+      "W/\"1fd-+2Y3G3w049iSZtw5t1mzSnunngE\""
+    ],
+    "Via": [
+      "1.1 vegur"
+    ],
+    "CF-Cache-Status": [
+      "HIT"
+    ],
+    "Age": [
+      "3429"
+    ],
+    "cf-request-id": [
+      "08e878de3d0000dfbf7003d000000001"
+    ],
+    "Expect-CT": [
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+    ],
+    "Report-To": [
+      "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report?s=plRhLA9k7yqLJuhu0F54q5A73Qr0tYaJL3nKup3dxnN%2FhcvJmTJ%2FlUE%2BF0%2Bm3M3ZraXeEMGFBm%2FfQTsTaPp2KsKnXek7j0cNBfcWwZ4JKaBh0EGAeZOQUuq4wmKL\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+    ],
+    "NEL": [
+      "{\"max_age\":604800,\"report_to\":\"cf-nel\"}"
+    ],
+    "Server": [
+      "cloudflare"
+    ],
+    "CF-RAY": [
+      "6320f7439c2bdfbf-FRA"
+    ],
+    "alt-svc": [
+      "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+    ]
+  },
+  "response": {
+    "website": "hildegard.org",
+    "address": {
+      "zipcode": "92998-3874",
+      "geo": {
+        "lng": "81.1496",
+        "lat": "-37.3159"
+      },
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "street": "Kulas Light"
+    },
+    "phone": "1-770-736-8031 x56442",
+    "name": "Leanne Graham",
+    "company": {
+      "bs": "harness real-time e-markets",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "name": "Romaguera-Crona"
+    },
+    "id": 1,
+    "email": "Sincere@april.biz",
+    "username": "Bret"
+  },
+  "env": "dev",
+  "myVarName": "someValue",
+  "responseStatus": 200,
+  "pause": "function(pause){ java.lang.Thread.sleep(pause) }",
+  "first": {
+    "website": "hildegard.org",
+    "address": {
+      "zipcode": "92998-3874",
+      "geo": {
+        "lng": "81.1496",
+        "lat": "-37.3159"
+      },
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "street": "Kulas Light"
+    },
+    "phone": "1-770-736-8031 x56442",
+    "name": "Leanne Graham",
+    "company": {
+      "bs": "harness real-time e-markets",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "name": "Romaguera-Crona"
+    },
+    "id": 1,
+    "email": "Sincere@april.biz",
+    "username": "Bret"
+  }
+}
+ 
+20:46:25.813 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+  "responseHeaders": {
+    "Date": [
+      "Thu, 18 Mar 2021 19:46:25 GMT"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Transfer-Encoding": [
+      "chunked"
+    ],
+    "Connection": [
+      "keep-alive"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ],
+    "X-Ratelimit-Limit": [
+      "1000"
+    ],
+    "X-Ratelimit-Remaining": [
+      "999"
+    ],
+    "X-Ratelimit-Reset": [
+      "1613218752"
+    ],
+    "Vary": [
+      "Origin, Accept-Encoding"
+    ],
+    "Access-Control-Allow-Credentials": [
+      "true"
+    ],
+    "Cache-Control": [
+      "max-age=43200"
+    ],
+    "Pragma": [
+      "no-cache"
+    ],
+    "Expires": [
+      "-1"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "Etag": [
+      "W/\"1fd-XTG63SYhaP/Uo6/vgmARnL3rpBk\""
+    ],
+    "Via": [
+      "1.1 vegur"
+    ],
+    "CF-Cache-Status": [
+      "HIT"
+    ],
+    "Age": [
+      "20506"
+    ],
+    "cf-request-id": [
+      "08e8790c830000d6d500a97000000001"
+    ],
+    "Expect-CT": [
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+    ],
+    "Report-To": [
+      "{\"max_age\":604800,\"group\":\"cf-nel\",\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report?s=sUGUsRt49MfpSr0rtb%2B5L29R8Uwj7vH5B43xJzgn%2BSV2suZ3k5y7EAn2nF3oj9%2B1Gtti3Tf0AnDaSkow90LFdbNXXTTjTNF0AhEdYZeHWw9yX3foulcSDlmgSmc%2F\"}]}"
+    ],
+    "NEL": [
+      "{\"report_to\":\"cf-nel\",\"max_age\":604800}"
+    ],
+    "Server": [
+      "cloudflare"
+    ],
+    "CF-RAY": [
+      "6320f78d9b71d6d5-FRA"
+    ],
+    "alt-svc": [
+      "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+    ]
+  },
+  "response": {
+    "website": "anastasia.net",
+    "address": {
+      "zipcode": "90566-7771",
+      "geo": {
+        "lng": "-34.4618",
+        "lat": "-43.9509"
+      },
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "street": "Victor Plains"
+    },
+    "phone": "010-692-6593 x09125",
+    "name": "Ervin Howell",
+    "company": {
+      "bs": "synergize scalable supply-chains",
+      "catchPhrase": "Proactive didactic contingency",
+      "name": "Deckow-Crist"
+    },
+    "id": 2,
+    "email": "Shanna@melissa.tv",
+    "username": "Antonette"
+  },
+  "env": "dev",
+  "myVarName": "someValue",
+  "responseStatus": 200,
+  "pause": "function(pause){ java.lang.Thread.sleep(pause) }",
+  "first": {
+    "website": "anastasia.net",
+    "address": {
+      "zipcode": "90566-7771",
+      "geo": {
+        "lng": "-34.4618",
+        "lat": "-43.9509"
+      },
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "street": "Victor Plains"
+    },
+    "phone": "010-692-6593 x09125",
+    "name": "Ervin Howell",
+    "company": {
+      "bs": "synergize scalable supply-chains",
+      "catchPhrase": "Proactive didactic contingency",
+      "name": "Deckow-Crist"
+    },
+    "id": 2,
+    "email": "Shanna@melissa.tv",
+    "username": "Antonette"
+  }
+}
+ 
+20:46:25.815 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+  "responseHeaders": {
+    "Date": [
+      "Thu, 18 Mar 2021 19:46:19 GMT"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Transfer-Encoding": [
+      "chunked"
+    ],
+    "Connection": [
+      "keep-alive"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ],
+    "X-Ratelimit-Limit": [
+      "1000"
+    ],
+    "X-Ratelimit-Remaining": [
+      "999"
+    ],
+    "X-Ratelimit-Reset": [
+      "1613661316"
+    ],
+    "Vary": [
+      "Origin, Accept-Encoding"
+    ],
+    "Access-Control-Allow-Credentials": [
+      "true"
+    ],
+    "Cache-Control": [
+      "max-age=43200"
+    ],
+    "Pragma": [
+      "no-cache"
+    ],
+    "Expires": [
+      "-1"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "Etag": [
+      "W/\"208-uuwhfwQMzFzbJr9Pg6DKXae0SXA\""
+    ],
+    "Via": [
+      "1.1 vegur"
+    ],
+    "CF-Cache-Status": [
+      "HIT"
+    ],
+    "Age": [
+      "15060"
+    ],
+    "cf-request-id": [
+      "08e878f65d0000e0075991f000000001"
+    ],
+    "Expect-CT": [
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+    ],
+    "Report-To": [
+      "{\"group\":\"cf-nel\",\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report?s=SmJzAGaWkdeeWdeSZ2l3sVSLXxiRe2K5vy0pUTaM5s5CYEUz2jLXXU4dYPasFvD%2FKhGLIe7P9emf3XLT97eFnzd5QjN%2BGn7XJFn4vmdSfE61Hj64COLe%2FjTRJTPL\"}],\"max_age\":604800}"
+    ],
+    "NEL": [
+      "{\"report_to\":\"cf-nel\",\"max_age\":604800}"
+    ],
+    "Server": [
+      "cloudflare"
+    ],
+    "CF-RAY": [
+      "6320f76a280be007-FRA"
+    ],
+    "alt-svc": [
+      "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+    ]
+  },
+  "response": {
+    "website": "ramiro.info",
+    "address": {
+      "zipcode": "59590-4157",
+      "geo": {
+        "lng": "-47.0653",
+        "lat": "-68.6102"
+      },
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "street": "Douglas Extension"
+    },
+    "phone": "1-463-123-4447",
+    "name": "Clementine Bauch",
+    "company": {
+      "bs": "e-enable strategic applications",
+      "catchPhrase": "Face to face bifurcated interface",
+      "name": "Romaguera-Jacobson"
+    },
+    "id": 3,
+    "email": "Nathan@yesenia.net",
+    "username": "Samantha"
+  },
+  "env": "dev",
+  "myVarName": "someValue",
+  "responseStatus": 200,
+  "pause": "function(pause){ java.lang.Thread.sleep(pause) }",
+  "first": {
+    "website": "ramiro.info",
+    "address": {
+      "zipcode": "59590-4157",
+      "geo": {
+        "lng": "-47.0653",
+        "lat": "-68.6102"
+      },
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "street": "Douglas Extension"
+    },
+    "phone": "1-463-123-4447",
+    "name": "Clementine Bauch",
+    "company": {
+      "bs": "e-enable strategic applications",
+      "catchPhrase": "Face to face bifurcated interface",
+      "name": "Romaguera-Jacobson"
+    },
+    "id": 3,
+    "email": "Nathan@yesenia.net",
+    "username": "Samantha"
+  }
+}
+ 
+20:46:25.817 [pool-1-thread-3] INFO  com.intuit.karate - >> lock acquired, begin callSingle: classpath:examples/commons/users-commons-internal.feature
+20:46:25.888 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Content-Length: 160
+1 > Content-Type: application/octet-stream
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:46:27.636 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1748
+1 < 201
+1 < Date: Thu, 18 Mar 2021 19:46:27 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 14
+1 < Connection: keep-alive
+1 < Set-Cookie: __cfduid=db5731ed22db32c3c0a72a487dfd2d3901616096787; expires=Sat, 17-Apr-21 19:46:27 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1616096844
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: http://jsonplaceholder.typicode.com/users/11
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"e-HA6WWAG/c4REvZ4q9d0N16BTb2A"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < cf-request-id: 08e879137900004ec149a08000000001
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=rej9Ox2Vqo18bm6N7kN8KNyc8tU4vXPA%2BcXkyO5N5M94nLk44MyR%2F0KswVjNgbymKVlRBoC0V5hQuBeg%2FWj4uerXdgZtAJ4Clvu891VMz%2FT%2BWwgxOOppU6YxNTWq"}],"max_age":604800}
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 6320f798cde64ec1-FRA
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+{"id":11}
+20:46:32.647 [pool-1-thread-3] INFO  com.intuit.karate - [print] created id is:  11 
+20:46:32.651 [pool-1-thread-3] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:examples/commons/users-commons-internal.feature
+20:46:32.653 [pool-1-thread-3] INFO  com.intuit.karate - [print] {
+  "getUsers2": {
+    "responseHeaders": {
+      "Date": [
+        "Thu, 18 Mar 2021 19:46:25 GMT"
+      ],
+      "Content-Type": [
+        "application/json; charset=utf-8"
+      ],
+      "Transfer-Encoding": [
+        "chunked"
+      ],
+      "Connection": [
+        "keep-alive"
+      ],
+      "X-Powered-By": [
+        "Express"
+      ],
+      "X-Ratelimit-Limit": [
+        "1000"
+      ],
+      "X-Ratelimit-Remaining": [
+        "999"
+      ],
+      "X-Ratelimit-Reset": [
+        "1613218752"
+      ],
+      "Vary": [
+        "Origin, Accept-Encoding"
+      ],
+      "Access-Control-Allow-Credentials": [
+        "true"
+      ],
+      "Cache-Control": [
+        "max-age=43200"
+      ],
+      "Pragma": [
+        "no-cache"
+      ],
+      "Expires": [
+        "-1"
+      ],
+      "X-Content-Type-Options": [
+        "nosniff"
+      ],
+      "Etag": [
+        "W/\"1fd-XTG63SYhaP/Uo6/vgmARnL3rpBk\""
+      ],
+      "Via": [
+        "1.1 vegur"
+      ],
+      "CF-Cache-Status": [
+        "HIT"
+      ],
+      "Age": [
+        "20506"
+      ],
+      "cf-request-id": [
+        "08e8790c830000d6d500a97000000001"
+      ],
+      "Expect-CT": [
+        "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+      ],
+      "Report-To": [
+        "{\"max_age\":604800,\"group\":\"cf-nel\",\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report?s=sUGUsRt49MfpSr0rtb%2B5L29R8Uwj7vH5B43xJzgn%2BSV2suZ3k5y7EAn2nF3oj9%2B1Gtti3Tf0AnDaSkow90LFdbNXXTTjTNF0AhEdYZeHWw9yX3foulcSDlmgSmc%2F\"}]}"
+      ],
+      "NEL": [
+        "{\"report_to\":\"cf-nel\",\"max_age\":604800}"
+      ],
+      "Server": [
+        "cloudflare"
+      ],
+      "CF-RAY": [
+        "6320f78d9b71d6d5-FRA"
+      ],
+      "alt-svc": [
+        "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+      ]
+    },
+    "response": {
+      "website": "anastasia.net",
+      "address": {
+        "zipcode": "90566-7771",
+        "geo": {
+          "lng": "-34.4618",
+          "lat": "-43.9509"
+        },
+        "suite": "Suite 879",
+        "city": "Wisokyburgh",
+        "street": "Victor Plains"
+      },
+      "phone": "010-692-6593 x09125",
+      "name": "Ervin Howell",
+      "company": {
+        "bs": "synergize scalable supply-chains",
+        "catchPhrase": "Proactive didactic contingency",
+        "name": "Deckow-Crist"
+      },
+      "id": 2,
+      "email": "Shanna@melissa.tv",
+      "username": "Antonette"
+    },
+    "env": "dev",
+    "myVarName": "someValue",
+    "responseStatus": 200,
+    "pause": "function(pause){ java.lang.Thread.sleep(pause) }",
+    "first": {
+      "website": "anastasia.net",
+      "address": {
+        "zipcode": "90566-7771",
+        "geo": {
+          "lng": "-34.4618",
+          "lat": "-43.9509"
+        },
+        "suite": "Suite 879",
+        "city": "Wisokyburgh",
+        "street": "Victor Plains"
+      },
+      "phone": "010-692-6593 x09125",
+      "name": "Ervin Howell",
+      "company": {
+        "bs": "synergize scalable supply-chains",
+        "catchPhrase": "Proactive didactic contingency",
+        "name": "Deckow-Crist"
+      },
+      "id": 2,
+      "email": "Shanna@melissa.tv",
+      "username": "Antonette"
+    }
+  },
+  "getUsers3": {
+    "responseHeaders": {
+      "Date": [
+        "Thu, 18 Mar 2021 19:46:19 GMT"
+      ],
+      "Content-Type": [
+        "application/json; charset=utf-8"
+      ],
+      "Transfer-Encoding": [
+        "chunked"
+      ],
+      "Connection": [
+        "keep-alive"
+      ],
+      "X-Powered-By": [
+        "Express"
+      ],
+      "X-Ratelimit-Limit": [
+        "1000"
+      ],
+      "X-Ratelimit-Remaining": [
+        "999"
+      ],
+      "X-Ratelimit-Reset": [
+        "1613661316"
+      ],
+      "Vary": [
+        "Origin, Accept-Encoding"
+      ],
+      "Access-Control-Allow-Credentials": [
+        "true"
+      ],
+      "Cache-Control": [
+        "max-age=43200"
+      ],
+      "Pragma": [
+        "no-cache"
+      ],
+      "Expires": [
+        "-1"
+      ],
+      "X-Content-Type-Options": [
+        "nosniff"
+      ],
+      "Etag": [
+        "W/\"208-uuwhfwQMzFzbJr9Pg6DKXae0SXA\""
+      ],
+      "Via": [
+        "1.1 vegur"
+      ],
+      "CF-Cache-Status": [
+        "HIT"
+      ],
+      "Age": [
+        "15060"
+      ],
+      "cf-request-id": [
+        "08e878f65d0000e0075991f000000001"
+      ],
+      "Expect-CT": [
+        "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+      ],
+      "Report-To": [
+        "{\"group\":\"cf-nel\",\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report?s=SmJzAGaWkdeeWdeSZ2l3sVSLXxiRe2K5vy0pUTaM5s5CYEUz2jLXXU4dYPasFvD%2FKhGLIe7P9emf3XLT97eFnzd5QjN%2BGn7XJFn4vmdSfE61Hj64COLe%2FjTRJTPL\"}],\"max_age\":604800}"
+      ],
+      "NEL": [
+        "{\"report_to\":\"cf-nel\",\"max_age\":604800}"
+      ],
+      "Server": [
+        "cloudflare"
+      ],
+      "CF-RAY": [
+        "6320f76a280be007-FRA"
+      ],
+      "alt-svc": [
+        "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+      ]
+    },
+    "response": {
+      "website": "ramiro.info",
+      "address": {
+        "zipcode": "59590-4157",
+        "geo": {
+          "lng": "-47.0653",
+          "lat": "-68.6102"
+        },
+        "suite": "Suite 847",
+        "city": "McKenziehaven",
+        "street": "Douglas Extension"
+      },
+      "phone": "1-463-123-4447",
+      "name": "Clementine Bauch",
+      "company": {
+        "bs": "e-enable strategic applications",
+        "catchPhrase": "Face to face bifurcated interface",
+        "name": "Romaguera-Jacobson"
+      },
+      "id": 3,
+      "email": "Nathan@yesenia.net",
+      "username": "Samantha"
+    },
+    "env": "dev",
+    "myVarName": "someValue",
+    "responseStatus": 200,
+    "pause": "function(pause){ java.lang.Thread.sleep(pause) }",
+    "first": {
+      "website": "ramiro.info",
+      "address": {
+        "zipcode": "59590-4157",
+        "geo": {
+          "lng": "-47.0653",
+          "lat": "-68.6102"
+        },
+        "suite": "Suite 847",
+        "city": "McKenziehaven",
+        "street": "Douglas Extension"
+      },
+      "phone": "1-463-123-4447",
+      "name": "Clementine Bauch",
+      "company": {
+        "bs": "e-enable strategic applications",
+        "catchPhrase": "Face to face bifurcated interface",
+        "name": "Romaguera-Jacobson"
+      },
+      "id": 3,
+      "email": "Nathan@yesenia.net",
+      "username": "Samantha"
+    }
+  },
+  "responseHeaders": {
+    "Date": [
+      "Thu, 18 Mar 2021 19:46:27 GMT"
+    ],
+    "Content-Type": [
+      "application/json; charset=utf-8"
+    ],
+    "Content-Length": [
+      "14"
+    ],
+    "Connection": [
+      "keep-alive"
+    ],
+    "Set-Cookie": [
+      "__cfduid=db5731ed22db32c3c0a72a487dfd2d3901616096787; expires=Sat, 17-Apr-21 19:46:27 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax"
+    ],
+    "X-Powered-By": [
+      "Express"
+    ],
+    "X-Ratelimit-Limit": [
+      "1000"
+    ],
+    "X-Ratelimit-Remaining": [
+      "999"
+    ],
+    "X-Ratelimit-Reset": [
+      "1616096844"
+    ],
+    "Vary": [
+      "Origin, X-HTTP-Method-Override, Accept-Encoding"
+    ],
+    "Access-Control-Allow-Credentials": [
+      "true"
+    ],
+    "Cache-Control": [
+      "no-cache"
+    ],
+    "Pragma": [
+      "no-cache"
+    ],
+    "Expires": [
+      "-1"
+    ],
+    "Access-Control-Expose-Headers": [
+      "Location"
+    ],
+    "Location": [
+      "http://jsonplaceholder.typicode.com/users/11"
+    ],
+    "X-Content-Type-Options": [
+      "nosniff"
+    ],
+    "Etag": [
+      "W/\"e-HA6WWAG/c4REvZ4q9d0N16BTb2A\""
+    ],
+    "Via": [
+      "1.1 vegur"
+    ],
+    "CF-Cache-Status": [
+      "DYNAMIC"
+    ],
+    "cf-request-id": [
+      "08e879137900004ec149a08000000001"
+    ],
+    "Expect-CT": [
+      "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+    ],
+    "Report-To": [
+      "{\"group\":\"cf-nel\",\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report?s=rej9Ox2Vqo18bm6N7kN8KNyc8tU4vXPA%2BcXkyO5N5M94nLk44MyR%2F0KswVjNgbymKVlRBoC0V5hQuBeg%2FWj4uerXdgZtAJ4Clvu891VMz%2FT%2BWwgxOOppU6YxNTWq\"}],\"max_age\":604800}"
+    ],
+    "NEL": [
+      "{\"report_to\":\"cf-nel\",\"max_age\":604800}"
+    ],
+    "Server": [
+      "cloudflare"
+    ],
+    "CF-RAY": [
+      "6320f798cde64ec1-FRA"
+    ],
+    "alt-svc": [
+      "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+    ]
+  },
+  "getUsers": {
+    "responseHeaders": {
+      "Date": [
+        "Thu, 18 Mar 2021 19:46:19 GMT"
+      ],
+      "Content-Type": [
+        "application/json; charset=utf-8"
+      ],
+      "Transfer-Encoding": [
+        "chunked"
+      ],
+      "Connection": [
+        "keep-alive"
+      ],
+      "X-Powered-By": [
+        "Express"
+      ],
+      "X-Ratelimit-Limit": [
+        "1000"
+      ],
+      "X-Ratelimit-Remaining": [
+        "999"
+      ],
+      "X-Ratelimit-Reset": [
+        "1613661316"
+      ],
+      "Vary": [
+        "Origin, Accept-Encoding"
+      ],
+      "Access-Control-Allow-Credentials": [
+        "true"
+      ],
+      "Cache-Control": [
+        "max-age=43200"
+      ],
+      "Pragma": [
+        "no-cache"
+      ],
+      "Expires": [
+        "-1"
+      ],
+      "X-Content-Type-Options": [
+        "nosniff"
+      ],
+      "Etag": [
+        "W/\"208-uuwhfwQMzFzbJr9Pg6DKXae0SXA\""
+      ],
+      "Via": [
+        "1.1 vegur"
+      ],
+      "CF-Cache-Status": [
+        "HIT"
+      ],
+      "Age": [
+        "15060"
+      ],
+      "cf-request-id": [
+        "08e878f65d0000e0075991f000000001"
+      ],
+      "Expect-CT": [
+        "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+      ],
+      "Report-To": [
+        "{\"group\":\"cf-nel\",\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report?s=SmJzAGaWkdeeWdeSZ2l3sVSLXxiRe2K5vy0pUTaM5s5CYEUz2jLXXU4dYPasFvD%2FKhGLIe7P9emf3XLT97eFnzd5QjN%2BGn7XJFn4vmdSfE61Hj64COLe%2FjTRJTPL\"}],\"max_age\":604800}"
+      ],
+      "NEL": [
+        "{\"report_to\":\"cf-nel\",\"max_age\":604800}"
+      ],
+      "Server": [
+        "cloudflare"
+      ],
+      "CF-RAY": [
+        "6320f76a280be007-FRA"
+      ],
+      "alt-svc": [
+        "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+      ]
+    },
+    "response": {
+      "website": "ramiro.info",
+      "address": {
+        "zipcode": "59590-4157",
+        "geo": {
+          "lng": "-47.0653",
+          "lat": "-68.6102"
+        },
+        "suite": "Suite 847",
+        "city": "McKenziehaven",
+        "street": "Douglas Extension"
+      },
+      "phone": "1-463-123-4447",
+      "name": "Clementine Bauch",
+      "company": {
+        "bs": "e-enable strategic applications",
+        "catchPhrase": "Face to face bifurcated interface",
+        "name": "Romaguera-Jacobson"
+      },
+      "id": 3,
+      "email": "Nathan@yesenia.net",
+      "username": "Samantha"
+    },
+    "env": "dev",
+    "myVarName": "someValue",
+    "responseStatus": 200,
+    "pause": "function(pause){ java.lang.Thread.sleep(pause) }",
+    "first": {
+      "website": "ramiro.info",
+      "address": {
+        "zipcode": "59590-4157",
+        "geo": {
+          "lng": "-47.0653",
+          "lat": "-68.6102"
+        },
+        "suite": "Suite 847",
+        "city": "McKenziehaven",
+        "street": "Douglas Extension"
+      },
+      "phone": "1-463-123-4447",
+      "name": "Clementine Bauch",
+      "company": {
+        "bs": "e-enable strategic applications",
+        "catchPhrase": "Face to face bifurcated interface",
+        "name": "Romaguera-Jacobson"
+      },
+      "id": 3,
+      "email": "Nathan@yesenia.net",
+      "username": "Samantha"
+    }
+  },
+  "response": {
+    "id": 11
+  },
+  "id": 11,
+  "env": "dev",
+  "myVarName": "someValue",
+  "responseStatus": 201,
+  "getUsers1": {
+    "responseHeaders": {
+      "Date": [
+        "Thu, 18 Mar 2021 19:46:13 GMT"
+      ],
+      "Content-Type": [
+        "application/json; charset=utf-8"
+      ],
+      "Transfer-Encoding": [
+        "chunked"
+      ],
+      "Connection": [
+        "keep-alive"
+      ],
+      "X-Powered-By": [
+        "Express"
+      ],
+      "X-Ratelimit-Limit": [
+        "1000"
+      ],
+      "X-Ratelimit-Remaining": [
+        "998"
+      ],
+      "X-Ratelimit-Reset": [
+        "1616035706"
+      ],
+      "Vary": [
+        "Origin, Accept-Encoding"
+      ],
+      "Access-Control-Allow-Credentials": [
+        "true"
+      ],
+      "Cache-Control": [
+        "max-age=43200"
+      ],
+      "Pragma": [
+        "no-cache"
+      ],
+      "Expires": [
+        "-1"
+      ],
+      "X-Content-Type-Options": [
+        "nosniff"
+      ],
+      "Etag": [
+        "W/\"1fd-+2Y3G3w049iSZtw5t1mzSnunngE\""
+      ],
+      "Via": [
+        "1.1 vegur"
+      ],
+      "CF-Cache-Status": [
+        "HIT"
+      ],
+      "Age": [
+        "3429"
+      ],
+      "cf-request-id": [
+        "08e878de3d0000dfbf7003d000000001"
+      ],
+      "Expect-CT": [
+        "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+      ],
+      "Report-To": [
+        "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report?s=plRhLA9k7yqLJuhu0F54q5A73Qr0tYaJL3nKup3dxnN%2FhcvJmTJ%2FlUE%2BF0%2Bm3M3ZraXeEMGFBm%2FfQTsTaPp2KsKnXek7j0cNBfcWwZ4JKaBh0EGAeZOQUuq4wmKL\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+      ],
+      "NEL": [
+        "{\"max_age\":604800,\"report_to\":\"cf-nel\"}"
+      ],
+      "Server": [
+        "cloudflare"
+      ],
+      "CF-RAY": [
+        "6320f7439c2bdfbf-FRA"
+      ],
+      "alt-svc": [
+        "h3-27=\":443\"; ma=86400, h3-28=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+      ]
+    },
+    "response": {
+      "website": "hildegard.org",
+      "address": {
+        "zipcode": "92998-3874",
+        "geo": {
+          "lng": "81.1496",
+          "lat": "-37.3159"
+        },
+        "suite": "Apt. 556",
+        "city": "Gwenborough",
+        "street": "Kulas Light"
+      },
+      "phone": "1-770-736-8031 x56442",
+      "name": "Leanne Graham",
+      "company": {
+        "bs": "harness real-time e-markets",
+        "catchPhrase": "Multi-layered client-server neural-net",
+        "name": "Romaguera-Crona"
+      },
+      "id": 1,
+      "email": "Sincere@april.biz",
+      "username": "Bret"
+    },
+    "env": "dev",
+    "myVarName": "someValue",
+    "responseStatus": 200,
+    "pause": "function(pause){ java.lang.Thread.sleep(pause) }",
+    "first": {
+      "website": "hildegard.org",
+      "address": {
+        "zipcode": "92998-3874",
+        "geo": {
+          "lng": "81.1496",
+          "lat": "-37.3159"
+        },
+        "suite": "Apt. 556",
+        "city": "Gwenborough",
+        "street": "Kulas Light"
+      },
+      "phone": "1-770-736-8031 x56442",
+      "name": "Leanne Graham",
+      "company": {
+        "bs": "harness real-time e-markets",
+        "catchPhrase": "Multi-layered client-server neural-net",
+        "name": "Romaguera-Crona"
+      },
+      "id": 1,
+      "email": "Sincere@april.biz",
+      "username": "Bret"
+    }
+  },
+  "user": {
+    "name": "Test User",
+    "username": "testuser",
+    "email": "test@user.com",
+    "address": {
+      "street": "Has No Name",
+      "suite": "Apt. 123",
+      "city": "Electri",
+      "zipcode": "54321-6789"
+    }
+  },
+  "pause": "function(pause){ java.lang.Thread.sleep(pause) }"
+}
+ 
+20:46:32.660 [pool-1-thread-3] INFO  com.intuit.karate - << lock released, cached callSingle: classpath:examples/commons/users-commons.feature
+20:46:32.661 [pool-1-thread-1] WARN  com.intuit.karate - this thread waited 18935 milliseconds for callSingle lock: classpath:examples/commons/users-commons.feature
+20:46:32.662 [pool-1-thread-2] WARN  com.intuit.karate - this thread waited 6859 milliseconds for callSingle lock: classpath:examples/commons/users-commons.feature
+---------------------------------------------------------
+feature: classpath:examples/users/users.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 32.5526
+---------------------------------------------------------
+
+20:46:33.103 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 8 of 10 (2 remaining) classpath:examples/users/users.feature
+---------------------------------------------------------
+feature: classpath:examples/users/users1.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 32.5537
+---------------------------------------------------------
+
+20:46:33.178 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 9 of 10 (1 remaining) classpath:examples/users/users1.feature
+---------------------------------------------------------
+feature: classpath:examples/users/users2.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 32.5517
+---------------------------------------------------------
+
+20:46:33.304 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 10 of 10 (0 remaining) classpath:examples/users/users2.feature
+Karate version: 1.0.0
+======================================================
+elapsed:  34.86 | threads:    3 | thread time: 97.66 
+features:     3 | skipped:    7 | efficiency: 0.93
+scenarios:    3 | passed:     3 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.0.0
+file:///Users/aruzzon/devel/karate/callSingle/target/karate-reports/karate-summary.html
+===================================================================
+
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 35.168 s - in examples.ExamplesTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  37.123 s
+[INFO] Finished at: 2021-03-18T20:46:33+01:00
+[INFO] ------------------------------------------------------------------------
