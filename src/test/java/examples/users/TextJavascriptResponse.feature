@@ -7,6 +7,8 @@ Feature: Test API when returning text/javascript as content-type
     And match responseHeaders['content-type'][0] == 'text/javascript; charset=utf-8'
     And match responseType == 'string'
     * print response
+
+    # No JSON conversion is needed in version 0.9.6
     * json resp = response
     * match resp.statusCode == 400
 
