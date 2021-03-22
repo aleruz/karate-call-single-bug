@@ -9,6 +9,9 @@ Feature: sample karate test script
     When method post
     Then status 201
 
+    * json resp = response
+    * print response.id
+
     # logging will show something like:
     # 1 > POST https://jsonplaceholder.typicode.com/users
     # 1 > Content-Type: application/x-www-form-urlencoded

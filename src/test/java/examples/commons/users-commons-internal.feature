@@ -5,6 +5,8 @@ Feature: sample karate test script
   Background:
     * url 'https://jsonplaceholder.typicode.com'
     * def pause = function(pause){ java.lang.Thread.sleep(pause) }
+    # add a read of a json configuration
+    * def config = read('classpath:general-config.json')
 
   Scenario: create a user and then get it by id
     * def user =
@@ -28,8 +30,6 @@ Feature: sample karate test script
     And request user
     When method post
     Then status 201
-
-    * pause(5000)
 
     * def id = response.id
     * print 'created id is: ', id
