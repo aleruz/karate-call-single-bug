@@ -7,6 +7,7 @@ Feature: sample karate test script
     * def pause = function(pause){ java.lang.Thread.sleep(pause) }
     # add a read of a json configuration
     * def config = read('classpath:general-config.json')
+    * def getUsers3 = karate.call('classpath:examples/commons/users-commons-get4.feature')
 
   Scenario: create a user and then get it by id
     * def user =
@@ -33,5 +34,7 @@ Feature: sample karate test script
 
     * def id = response.id
     * print 'created id is: ', id
+
+
 
 

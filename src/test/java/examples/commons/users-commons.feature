@@ -15,6 +15,5 @@ Feature: sample karate test script
     * def getUsers3 = karate.callSingle('classpath:examples/commons/users-commons-get3.feature')
     * print getUsers3
     * def getUsers3 = karate.call('classpath:examples/commons/users-commons-get4.feature')
-    * print getUsers3
     * def createUsers = karate.callSingle('classpath:examples/commons/users-commons-internal.feature')
     * print createUsers

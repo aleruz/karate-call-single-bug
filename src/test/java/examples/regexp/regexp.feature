@@ -6,6 +6,11 @@ Feature: test regexp
     * def value = '/de/search'
     * match value == regex
 
+
+    * def regexWithEntities = '#regex /\\w{2}/search\\.\\*'
+    * def valueWithEntities = '/de/search.*'
+    * match valueWithEntities == regexWithEntities
+
     # was working in 0.9.6
     # Now error is:
     #
