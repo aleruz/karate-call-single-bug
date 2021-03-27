@@ -11,10 +11,10 @@ Feature: Create product test data for current tenant
     * def activeLanguage = get[0] feConfigurationResponse.response.languages[?(@.active == true)]
 
     * def tenant = karate.properties['tenant']
-    * def baseStoreInfoResponse = karate.callSingle('classpath:commons/product/GetBaseStoreInfo.feature', {tenant:tenant})
+    * def baseStoreInfoResponse = karate.callSingle('classpath:examples/commons/product/GetBaseStoreInfo.feature', {tenant:tenant})
     * def baseStoreInfo = baseStoreInfoResponse.baseStoreInfo
     * def warehouse = baseStoreInfo.warehouse
-    * def createProductTestDataStagedCatalogResponse = karate.call('classpath:commons/product/CreateProductTestData.feature', {tenant:tenant, lang:activeLanguage.isocode, currency:activeCurrency.isocode, warehouse:warehouse, catalogVersion:'Staged'})
-    * def createProductTestDataResponse = karate.call('classpath:commons/product/CreateProductTestData.feature', {tenant:tenant, lang:activeLanguage.isocode, currency:activeCurrency.isocode, warehouse:warehouse, catalogVersion:'Online'})
+    * def createProductTestDataStagedCatalogResponse = karate.call('classpath:examples/commons/product/CreateProductTestData.feature', {tenant:tenant, lang:activeLanguage.isocode, currency:activeCurrency.isocode, warehouse:warehouse, catalogVersion:'Staged'})
+    * def createProductTestDataResponse = karate.call('classpath:examples/commons/product/CreateProductTestData.feature', {tenant:tenant, lang:activeLanguage.isocode, currency:activeCurrency.isocode, warehouse:warehouse, catalogVersion:'Online'})
     # a small pause is needed because there is a cache in place which needs to be evicted
     * pause(2000)

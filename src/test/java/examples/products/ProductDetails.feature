@@ -25,12 +25,4 @@ Feature: Product details
     * match $.name == expectedProperties.name
     * match $.url == expectedProperties.url
     * match $.description == expectedProperties.description
-    * match $.baseProductName == expectedProperties.baseProductName
-    * match $.price.currencyIso == activeCurrency.isocode
-    * match $.baseProduct == expectedProperties.baseProduct
-    * match $.availability.code == expectedProperties.availability
-    * match $.numberOfReviews == expectedProperties.numberOfReviews
-    * match $.hideIfSoldOut == expectedProperties.hideIfSoldOut
-    * match $.price == expectedProperties.priceData
-    * match $.price.currencyIso == activeCurrency.isocode
-    * match $.stock.stockLevelStatus == expectedProperties.stock.stockLevelStatus
+
